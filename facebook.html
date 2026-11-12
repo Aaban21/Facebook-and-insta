@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+    
+        }
+
+        .left {
+            
+            border-right: 1px solid grey;
+            
+        }
+
+        .girl {
+            width: 480px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .explore {
+            font-size: 4vw;
+            font-weight: 600;
+            margin-top: 200px;
+            flex: 0 0 320px
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .right {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .right form input {
+            width: 35vw;
+            height: 10vh;
+            display: block;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 25px 10px;
+            border: 1px solid rgb(201, 189, 189);
+            font-size: larger;
+        }
+
+        .right form input:focus {
+            border: 3px solid rgb(96, 96, 238);
+        }
+
+        .btn {
+            width: 35vw;
+            display: block;
+            padding: 10px 10px;
+            font-size: larger;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px 10px;
+
+        }
+
+        #login {
+            background: blue;
+            color: azure;
+            border: none;
+        }
+
+        #create {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #ffffff;
+        color: #0866ff;
+        border: 1px solid #0866ff;
+        border-radius: 24px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 30px;
+        padding: 13px;
+        }
+
+        #create:hover {
+        background-color: #f0f7ff;
+        }
+
+
+        #forget {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            display: block;
+        }
+
+        #meta-logo {
+            width: 20px;
+        }
+
+        .meta-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer {
+      width: 100%;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid #efefef;
+      margin-top: 40px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      font-size: 11px;
+      color: #737373;
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #737373;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 11px;
+      color: #737373;
+    }
+    .copyright {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    font-size: 11px;
+}
+    .lang-select {
+      border: none;
+      background: transparent;
+      color: #737373;
+      font-size: 11px;
+      outline: none;
+      cursor: pointer;
+      display: flex;
+    }
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px 15px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="image.png.png" alt="logo" id="logo">
+            </div>
+
+        <div class="right">
+
+            <form>
+                <h3>Log in to Facebook
+                </h3>
+
+                <input type="email" placeholder="enter your email addres">
+                <input type="password" placeholder="enter your password">
+
+                <button class="btn" id="login">Log in</button>
+                <a href="forgetPassword.html" id="forget">Forgetten password?</a>
+
+                <a href="signup.html" id="create">Create new Account</a>
+
+                <div class="meta-div">
+                    <img src="img.png" alt="meta" id="meta-logo">
+                    Meta
+                </div>
+
+           
+
+
+
+            </form>
+
+        </div>
+        
+    </div>
+     <div class="footer">
+    <div class="footer-links">
+       <a href="https://about.meta.com/">Meta</a>
+                    <a href="https://about.instagram.com/">About</a>
+                    <a href="https://about.instagram.com/blog/">Blog</a>
+                    <a href="https://about.instagram.com/about-us/careers">Jobs</a>
+                    <a href="https://help.instagram.com/">Help</a>
+                    <a href="https://developers.facebook.com/docs/instagram">API</a>
+                    <a href="https://www.instagram.com/legal/privacy/?hl=en">Privacy</a>
+                    <a href="https://www.instagram.com/legal/terms/?hl=en">Terms</a>
+                    <a href="https://www.instagram.com/explore/locations/?hl=en">Locations</a>
+                    <a href="https://www.instagram.com/popular/?hl=en">Popular</a>
+                    <a href="https://www.instagram.com/web/lite/?hl=en">Instagram Lite</a>
+                    <a href="https://www.meta.ai/?utm_source=foa_web_footer">Meta AI</a>
+                    <a href="https://muse.ai/">Muse</a>
+                    <a href="https://www.threads.com/">Threads</a>
+                    <a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading &amp; Non-Users</a>
+                    <a href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer&amp;hl=en">Meta Verified</a>
+                </div>
+    </div>
+
+    <div class="footer-bottom">
+      <label for="language-select">Language:</label>
+                    <select id="language-select" name="language">
+                        <option selected>English</option>
+                        <option>Afrikaans</option>
+                        <option>العربية</option>
+                        <option>Čeština</option>
+                        <option>Dansk</option>
+                        <option>Deutsch</option>
+                        <option>Ελληνικά</option>
+                        <option>English (UK)</option>
+                        <option>Español (España)</option>
+                        <option>Español</option>
+                        <option>فارسی</option>
+                        <option>Suomi</option>
+                        <option>Français</option>
+                        <option>עברית</option>
+                        <option>Bahasa Indonesia</option>
+                        <option>Italiano</option>
+                        <option>日本語</option>
+                        <option>한국어</option>
+                        <option>Bahasa Melayu</option>
+                        <option>Norsk</option>
+                        <option>Nederlands</option>
+                        <option>Polski</option>
+                        <option>Português (Brasil)</option>
+                        <option>Português (Portugal)</option>
+                        <option>Русский</option>
+                        <option>Svenska</option>
+                        <option>ภาษาไทย</option>
+                        <option>Filipino</option>
+                        <option>Türkçe</option>
+                        <option>中文(简体)</option>
+                        <option>中文(台灣)</option>
+                        <option>বাংলা</option>
+                        <option>ગુજરાતી</option>
+                        <option>हिन्दी</option>
+                        <option>Hrvatski</option>
+                        <option>Magyar</option>
+                        <option>ಕನ್ನಡ</option>
+                        <option>മലയാളം</option>
+                        <option>मराठी</option>
+                        <option>नेपाली</option>
+                        <option>ਪੰਜਾਬੀ</option>
+                        <option>සිංහල</option>
+                        <option>Slovenčina</option>
+                        <option>தமிழ்</option>
+                        <option>తెలుగు</option>
+                        <option>اردو</option>
+                        <option>Tiếng Việt</option>
+                        <option>中文(香港)</option>
+                        <option>Български</option>
+                        <option>Français (Canada)</option>
+                        <option>Română</option>
+                        <option>Српски</option>
+                        <option>Українська</option>
+                    </select>
+      
+    </div>
+    <p class="copyright">© 2026 Instagram from Meta</p>
+  </div>
+
+</body>
+
+</html>
